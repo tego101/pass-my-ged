@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pass My GED
+
+A free, no-sign-up GED test preparation web app. Study guides, practice quizzes, flashcards, and timed practice exams for all 4 GED subjects.
+
+## Purpose
+
+Help anyone prepare for the GED exam without barriers — no accounts, no paywalls, no ads. Everything runs locally in the browser using localStorage for progress tracking.
+
+## Features
+
+- **4 GED Subjects** — Mathematical Reasoning, Language Arts, Science, Social Studies
+- **Study Guides** — In-depth topic breakdowns with key formulas and test-taking tips
+- **Practice Quizzes** — Step-through quizzes with immediate feedback and explanations
+- **Timed Practice Exams** — Full-length exams with GED-realistic time limits, question navigator, and answer review
+- **Flashcards** — Flip-card decks with 3D animations and known/unknown tracking
+- **Multi-Profile Support** — Create separate profiles to share the app with others on the same device
+- **Device Sync** — Generate a sync link to transfer your progress to another device
+- **Dark/Light Theme** — System-aware theming
+- **Responsive** — Works on desktop, tablet, and mobile
+- **100% Free & Offline** — No backend, no sign-up, all content is static
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS v4 + shadcn/ui
+- Framer Motion
+- TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000).
