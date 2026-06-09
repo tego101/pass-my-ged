@@ -18,7 +18,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pass My GED — Free GED Study Resource",
   description:
-    "Free GED study guides, practice quizzes, flashcards, and timed exams for all 4 GED subjects. No sign-up required.",
+    "Pass My GED offers free study guides, practice tests, flashcards, and timed exams for all 4 GED subjects: Math, Science, Social Studies, and Language Arts. No sign-up required. Start studying today and pass your GED with confidence.",
+  keywords: [
+    "GED",
+    "GED test",
+    "GED study guide",
+    "GED practice test",
+    "GED prep",
+    "free GED",
+    "GED exam",
+    "GED math",
+    "GED science",
+    "GED social studies",
+    "GED language arts",
+    "GED flashcards",
+    "GED timed exam",
+    "high school equivalency",
+    "GED test prep free",
+    "pass GED",
+  ],
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -26,10 +44,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pass My GED — Free GED Study Resource",
     description:
-      "Free GED study guides, practice quizzes, flashcards, and timed exams for all 4 GED subjects. No sign-up required.",
+      "Pass My GED offers free study guides, practice tests, flashcards, and timed exams for all 4 GED subjects: Math, Science, Social Studies, and Language Arts. No sign-up required. Start studying today and pass your GED with confidence.",
     url: "https://pass-my-ged.vercel.app/",
     siteName: "Pass My GED",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pass My GED — Free GED Study Resource",
+    description:
+      "Pass My GED offers free study guides, practice tests, flashcards, and timed exams for all 4 GED subjects: Math, Science, Social Studies, and Language Arts. No sign-up required.",
   },
 };
 
