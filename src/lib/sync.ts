@@ -1,7 +1,26 @@
-import type { SyncPayload } from "./types"
+import type { SyncPayload, UserProgress } from "./types"
+
+function stripCanvasData(progress: UserProgress): UserProgress {
+  return {
+    ...progress,
+    scratchPadData: {
+      ...progress.scratchPadData,
+      isMinimized: true,
+      position: { x: 16, y: 100 },
+      pages: progress.scratchPadData.pages.map((p) => ({
+        ...p,
+        drawing: "",
+      })),
+    },
+  }
+}
 
 export function packSyncToken(payload: SyncPayload): string {
-  const json = JSON.stringify(payload)
+  const clean: SyncPayload = {
+    ...payload,
+    progress: stripCanvasData(payload.progress),
+  }
+  const json = JSON.stringify(clean)
   return btoa(unescape(encodeURIComponent(json)))
     .replace(/\+/g, "-")
     .replace(/\//g, "_")

@@ -64,11 +64,36 @@ export interface ExamResult {
   answers: number[]
 }
 
+export interface ScratchPadPage {
+  id: string
+  text: string
+  drawing: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface ScratchPadData {
+  activePageId: string
+  pages: ScratchPadPage[]
+  isMinimized: boolean
+  position: { x: number; y: number }
+  size: { w: number; h: number }
+}
+
+export const DEFAULT_SCRATCH_PAD: ScratchPadData = {
+  activePageId: "",
+  pages: [],
+  isMinimized: true,
+  position: { x: 16, y: 100 },
+  size: { w: 400, h: 500 },
+}
+
 export interface UserProgress {
   studiedTopics: string[]
   quizResults: QuizResult[]
   examResults: ExamResult[]
   flashcardProgress: Record<string, string[]>
+  scratchPadData: ScratchPadData
 }
 
 export interface Profile {

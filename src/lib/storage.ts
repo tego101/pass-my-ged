@@ -1,4 +1,5 @@
 import type { UserProgress, QuizResult, ExamResult } from "./types"
+import { DEFAULT_SCRATCH_PAD } from "./types"
 import { getActiveProfileId } from "./profiles"
 
 function getStorageKey(): string {
@@ -11,6 +12,7 @@ const defaultProgress: UserProgress = {
   quizResults: [],
   examResults: [],
   flashcardProgress: {},
+  scratchPadData: DEFAULT_SCRATCH_PAD,
 }
 
 export function getProgress(): UserProgress {
